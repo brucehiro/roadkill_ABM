@@ -17,7 +17,7 @@ move_time_cal<-function(origin_xy,velocity,move_type,time_used,out_of_range)
     }
     else if(origin_xy[1,2]+velocity*time_cum == top_limit)
     {
-      time_cum = 1/(velocity/top_limit)
+      #time_cum = 1/(velocity/top_limit)
       origin_xy[1,2] = top_limit
     }
     else
